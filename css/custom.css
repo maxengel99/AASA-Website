@@ -1,0 +1,64 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+nav.transparent .menu > li > a.active {
+  color: #fff;
+}
+
+nav.transparent .menu > li > a.inactive {
+  color: #e9e9e9;
+  transition: color .5s ease;
+}
+
+nav.transparent .menu > li > a.inactive:hover {
+  color:#fff;
+}
+
+nav .menu > li > a.active {
+  opacity: 1;
+}
+
+.image-slider .slides li > img {
+  height: 500px;
+  width: auto;
+}
+
+.image-slider .slides li {
+  text-align: center;
+}
+
+.flex-direction-nav a.flex-prev:before, .flex-direction-nav a.flex-next:before {
+  color:#505050;
+}
+
+.subtitle {
+  color: #888888;
+  font-style:italic;
+}
+
+.box {
+  background-color: #f8f8f8;
+  padding:32px;
+  padding-bottom:8px;
+}
+
+.under-box {
+  background-color:#e9e9e9;
+  border-top:1px solid #c9c9c9;
+  padding:32px;
+  padding-top:16px;
+}
+
+#accordion > .panel > .panel-collapse {
+  padding:32px;
+}
+
+#accordion > .panel > .panel-heading > .panel-title > a {
+  width:100%;
+  display: inline-block;
+}
+
+hr {
+  width:50%;
+  margin:0 auto;
+  padding-bottom:24px;
+  text-align:center;
+}
