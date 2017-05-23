@@ -71,11 +71,21 @@ hr {
   background-color: #32cdcd;
 }
 
+#mentors .modal-lg {
+  width: 80%;
+}
+
 #mentor-table th {
+  color: black;
   word-wrap: break-word;
 }
 
 #mentor-table td {
   text-align: left;
   vertical-align:middle;
+}
+
+#mentor-table img {
+  max-width: 20%;
+  display: inline;
 }
