@@ -71,6 +71,11 @@ hr {
   background-color: #32cdcd;
 }
 
-.th {
+#mentor-table th {
   word-wrap: break-word;
+}
+
+#mentor-table td {
+  text-align: left;
+  vertical-align:middle;
 }
