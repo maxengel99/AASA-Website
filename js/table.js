@@ -3,12 +3,11 @@ var peopleArray = [];
 
 $.get(file, function(data){
   var lines = data.split("\n"); // creates array of each line
-
+  console.log(lines[7]);
   for(var i = 0; i < lines.length; i++){
-    if(lines[i] == ''){
+    if(lines[i] == '' || lines[i] == ' '){
       lines.splice(i,1); // remove blank
-      lines.length = lines.length - 1; // reduce length
-      i = i - 1; // check same index for repeating blank lines
+      i--; // check same index for repeating blank lines
     }
   }
 
@@ -17,12 +16,12 @@ $.get(file, function(data){
   alert(numOfPeople)
 
   //for(var i = 0; i < numOfPeople; i++){
-  //    peopleArray[numOfPeople].name = lines[peopleIndex * 7];
-  //    peopleArray[numOfPeople].pronouns = lines[peopleIndex * 7 + 1];
-  //    peopleArray[numOfPeople].hometown = lines[peopleIndex * 7 + 2];
-  //    peopleArray[numOfPeople].study = lines[peopleIndex * 7 + 3];
-//      peopleArray[numOfPeople].involvmenet = lines[peopleIndex * 7 + 4];
-//      peopleArray[numOfPeople].contact = lines[peopleIndex * 7 + 5];
+  //    peopleArray[numOfPeople].name = lines[numOfPeople * 7];
+  //    peopleArray[numOfPeople].pronouns = lines[numOfPeople * 7 + 1];
+  //    peopleArray[numOfPeople].hometown = lines[numOfPeople * 7 + 2];
+  //    peopleArray[numOfPeople].study = lines[numOfPeople * 7 + 3];
+//      peopleArray[numOfPeople].involvmenet = lines[numOfPeople * 7 + 4];
+//      peopleArray[numOfPeople].contact = lines[numOfPeople * 7 + 5];
 //  }
 
   console.log(peopleArray);
