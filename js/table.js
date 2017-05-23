@@ -2,9 +2,9 @@ var file = "Mentorlist.txt";
 var peopleArray = [];
 
 $.get(file, function(data){
+  console.log(data);
   var lines = data.split("\n"); // creates array of each lines
   var numOfPeople = lines.length/7; // 7 = num of lines per person
-
   alert(lines.length);
 
   //for(var i = 0; i < numOfPeople; i++){
