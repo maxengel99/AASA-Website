@@ -14,7 +14,7 @@ $.get(file, function(data){
   console.log(lines);
   var numOfPeople = (lines.length+1)/6; // 6 = num of lines per person
 
-  for(var i = 0; i < numOfPeople; i++){
+  for(var i = 0; i < numOfPeople-1; i++){
       peopleArray[i] = {
         fullname: lines[i * 6],
         pronouns: lines[i * 6 + 1],
