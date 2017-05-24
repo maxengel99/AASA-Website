@@ -13,16 +13,16 @@ $.get(file, function(data){
 
   console.log(lines);
   var numOfPeople = (lines.length+1)/6; // 6 = num of lines per person
-  alert(numOfPeople)
+  console.log(lines[0]);
 
   for(var i = 0; i < numOfPeople; i++){
       peopleArray[i] = {
-        fullname: lines[numOfPeople * 7],
-        pronouns: lines[numOfPeople * 7 + 1],
-        hometown: lines[numOfPeople * 7 + 2],
-        study: lines[numOfPeople * 7 + 3],
-        involvement: lines[numOfPeople * 7 + 4],
-        contact: lines[numOfPeople * 7 + 5]
+        fullname: lines[i * 6],
+        pronouns: lines[i * 6 + 1],
+        hometown: lines[i * 6 + 2],
+        study: lines[i * 6 + 3],
+        involvement: lines[i * 6 + 4],
+        contact: lines[i * 6 + 5]
       }
   }
 
@@ -40,6 +40,9 @@ $.get(file, function(data){
 
     return 0;
   });
+
+  console.log(peopleArray);
+
 
   //for(var i = 0; i < numOfPeople; i++){
   //  $('#mentor-table').append("<tr><td>" + peopleArray[i].fullname + "</td><td>" + peopleArray[i].pronouns + "</td><td>"
