@@ -16,14 +16,19 @@ $.get(file, function(data){
   alert(numOfPeople)
 
   for(var i = 0; i < numOfPeople; i++){
-      peopleArray[numOfPeople].fullname: lines[numOfPeople * 7],
-      peopleArray[numOfPeople].pronouns: lines[numOfPeople * 7 + 1],
-      peopleArray[numOfPeople].hometown: lines[numOfPeople * 7 + 2],
-      peopleArray[numOfPeople].study: lines[numOfPeople * 7 + 3],
-      peopleArray[numOfPeople].involvmenet: lines[numOfPeople * 7 + 4],
-      peopleArray[numOfPeople].contact: lines[numOfPeople * 7 + 5]
+      peopleArray[i] = {
+        fullname: lines[numOfPeople * 7],
+        pronouns: lines[numOfPeople * 7 + 1],
+        hometown: lines[numOfPeople * 7 + 2],
+        study: lines[numOfPeople * 7 + 3],
+        involvement: lines[numOfPeople * 7 + 4],
+        contact: lines[numOfPeople * 7 + 5]
+      }
   }
 
+  console.log(peopleArray);
+
+  // sort people by alphabetical order
   peopleArray.sort(function(a,b) {
     if(a.fullname < b.fullname) {
       return -1;
@@ -36,5 +41,9 @@ $.get(file, function(data){
     return 0;
   });
 
-  console.log(peopleArray);
+  //for(var i = 0; i < numOfPeople; i++){
+  //  $('#mentor-table').append("<tr><td>" + peopleArray[i].fullname + "</td><td>" + peopleArray[i].pronouns + "</td><td>"
+  //    + peopleArray[i].hometown + "</td><td>" + peopleArray[i].study + "</td><td>" + peopleArray[i].involvement + "</td><td>"
+  //    + peopleArray[i].contact);
+  //}
 });
