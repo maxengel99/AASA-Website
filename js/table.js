@@ -3,12 +3,12 @@ var peopleArray = [];
 
 $.get(file, function(data){
   var lines = data.split("\n"); // creates array of each line
-  console.log(typeof lines[7]);
 
   for(var i = 0; i < lines.length; i++){
-    if(lines[i] == null){
+    if(lines[i] == ""){
       lines.splice(i,1); // remove blank
       i--; // check same index for repeating blank lines
+      console.log('test');
     }
   }
 
