@@ -13,7 +13,6 @@ $.get(file, function(data){
 
   console.log(lines);
   var numOfPeople = (lines.length+1)/6; // 6 = num of lines per person
-  console.log(lines[0]);
 
   for(var i = 0; i < numOfPeople; i++){
       peopleArray[i] = {
@@ -29,19 +28,19 @@ $.get(file, function(data){
   console.log(peopleArray);
 
   // sort people by alphabetical order
-  peopleArray.sort(function(a,b) {
-    if(a.fullname < b.fullname) {
-      return -1;
-    }
+//  peopleArray.sort(function(a,b) {
+  //  if(a.fullname < b.fullname) {
+  //    return -1;
+  //  }
 
-    if(a.fullname > b.fullname) {
-      return 1;
-    }
+  //  if(a.fullname > b.fullname) {
+    //  return 1;
+  //  }
+//
+//    return 0;
+//  });
 
-    return 0;
-  });
-
-  console.log(peopleArray);
+  //console.log(peopleArray);
 
 
   //for(var i = 0; i < numOfPeople; i++){
