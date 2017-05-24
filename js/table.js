@@ -43,9 +43,9 @@ $.get(file, function(data){
 
   console.log(peopleArray);
 
-  //for(var i = 0; i < numOfPeople; i++){
-  //  $('#mentor-table').append("<tr><td>" + peopleArray[i].fullname + "</td><td>" + peopleArray[i].pronouns + "</td><td>"
-  //    + peopleArray[i].hometown + "</td><td>" + peopleArray[i].study + "</td><td>" + peopleArray[i].involvement + "</td><td>"
-  //    + peopleArray[i].contact);
-  //}
+  for(var i = 0; i < numOfPeople; i++){
+    $('#mentor-table').append("<tr><td>" + peopleArray[i].fullname + "</td><td>" + peopleArray[i].pronouns + "</td><td>"
+    + peopleArray[i].hometown + "</td><td>" + peopleArray[i].study + "</td><td>" + peopleArray[i].involvement + "</td><td>"
+    + peopleArray[i].contact);
+  }
 });
