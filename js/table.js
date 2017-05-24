@@ -12,9 +12,9 @@ $.get(file, function(data){
   }
 
   console.log(lines);
-  var numOfPeople = (lines.length+1)/6; // 6 = num of lines per person
+  var numOfPeople = (lines.length+1)/6 - 1; // 6 = num of lines per person
 
-  for(var i = 0; i < numOfPeople-1; i++){
+  for(var i = 0; i < numOfPeople; i++){
       peopleArray[i] = {
         fullname: lines[i * 6],
         pronouns: lines[i * 6 + 1],
@@ -25,26 +25,23 @@ $.get(file, function(data){
       }
   }
 
-  console.log(peopleArray);
-
   // sort people by alphabetical order
-//  peopleArray.sort(function(a,b) {
-  //  var afullname = a.fullname.toLowerCase();
-  //  var bfullname = b.fullname.toLowerCase();
+  peopleArray.sort(function(a,b) {
+    var afullname = a.fullname.toLowerCase();
+    var bfullname = b.fullname.toLowerCase();
 
-  //  if(afullname < bfullname) {
-  //    return -1;
-  //  }
+    if(afullname < bfullname) {
+      return -1;
+    }
 
-  //  if(afullname > bfullname) {
-  //    return 1;
-  //  }
+    if(afullname > bfullname) {
+      return 1;
+    }
 
-  //  return 0;
-//  });
+    return 0;
+  });
 
-  //console.log(peopleArray);
-
+  console.log(peopleArray);
 
   //for(var i = 0; i < numOfPeople; i++){
   //  $('#mentor-table').append("<tr><td>" + peopleArray[i].fullname + "</td><td>" + peopleArray[i].pronouns + "</td><td>"
