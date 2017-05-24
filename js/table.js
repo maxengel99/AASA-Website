@@ -5,11 +5,12 @@ $.get(file, function(data){
   var lines = data.split("\n"); // creates array of each line
 
   for(var i = 0; i < lines.length; i++){
-    if(lines[i] == ""){
-      lines.splice(i,1); // remove blank
-      i--; // check same index for repeating blank lines
-      console.log('test');
+    if(/^\s*$/.test(lines[i])){
+      lines.splice(i,1);  // remove blank indexes
+      i--;  // check same index for repeating blank lines
+      console.log('delete');
     }
+    console.log('test');
   }
 
   console.log(lines);
