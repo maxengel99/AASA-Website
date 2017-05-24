@@ -28,19 +28,22 @@ $.get(file, function(data){
   console.log(peopleArray);
 
   // sort people by alphabetical order
-  peopleArray.sort(function(a,b) {
-    if(a.fullname < b.fullname) {
-      return -1;
-    }
+//  peopleArray.sort(function(a,b) {
+  //  var afullname = a.fullname.toLowerCase();
+  //  var bfullname = b.fullname.toLowerCase();
 
-    if(a.fullname > b.fullname) {
-      return 1;
-    }
+  //  if(afullname < bfullname) {
+  //    return -1;
+  //  }
 
-    return 0;
-  });
+  //  if(afullname > bfullname) {
+  //    return 1;
+  //  }
 
-  console.log(peopleArray);
+  //  return 0;
+//  });
+
+  //console.log(peopleArray);
 
 
   //for(var i = 0; i < numOfPeople; i++){
