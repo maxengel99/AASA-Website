@@ -67,6 +67,7 @@ hr {
   background-color: #84e1e1;
 }
 
+.newbtn:focus,
 .newbtn:hover {
   background-color: #32cdcd;
 }
