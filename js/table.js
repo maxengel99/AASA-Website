@@ -22,7 +22,7 @@ $.get(file, function(data){
         study: lines[i * 6 + 3],
         involvement: lines[i * 6 + 4],
         contact: lines[i * 6 + 5]
-      }
+      } +
   }
 
   // sort people by alphabetical order
@@ -43,6 +43,7 @@ $.get(file, function(data){
 
   console.log(peopleArray);
 
+  /* Comment out table creator
   for(var i = 0; i < numOfPeople; i++){
     $('#mentor-table').append("<tr><td>" + peopleArray[i].fullname + "</td><td>" + peopleArray[i].pronouns + "</td><td>"
     + peopleArray[i].hometown + "</td><td>" + peopleArray[i].study + "</td><td>" + peopleArray[i].involvement + "</td><td>"
@@ -50,5 +51,12 @@ $.get(file, function(data){
 
     //<td><a href="malto:maxengel99@gmail.com" target="_blank"><img alt="Contact" src="img/mail-clipart.png"></a></td> -->
 
+  }*/
+
+  for(var i = 0; i < numOfPeople; i++){
+    $('#mentor-grid').append("<div class=\"box\"><h2>" + peopleArray[i].fullname + "</h2><ul><li>" + peopleArray[i].pronouns +
+    "</li><li>" + peopleArray[i].hometown + "</li><li>" + peopleArray[i].study + "</li><li>" + peopleArray[i].involvement +
+    "</li></ul></div>");
   }
+  
 });
