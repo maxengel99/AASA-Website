@@ -1,8 +1,8 @@
-﻿Amy Woo
+﻿Amy Woo 
 She/her/hers
 Los Angeles, CA
-Medicine, Health, and Society; Chemistry; Pre-med
-Commodore Orchestra (VCO), Multicultural Leadership Council (MLC), Vandy Sex Ed (VSE)
+Medicine, Health, and Society; Chemistry; Pre-med 
+Commodore Orchestra (VCO), Multicultural Leadership Council (MLC), Vandy Sex Ed (VSE) 
 amy.woo@vanderbilt.edu
 
 
@@ -66,7 +66,7 @@ Alyson Win
 She/Her/Hers
 Belton, TX (Austin area)
 Medicine, Health, and Society; Sociology; Pre-med
-AASA, Vandy Taal A Cappella
+AASA, Vandy Taal A Cappella 
 alyson.k.win@vanderbilt.edu
 
 
@@ -164,7 +164,7 @@ Casey Han
 She/her/hers
 Des Plaines, IL (Chicago)
 MHS; Corporate Strategy; Pre-med
-Red Cross, AASA, Research Assistant, ADPi
+Red Cross, AASA, Research Assistant, ADPi 
 casey.j.han@vanderbilt.edu
 
 
@@ -239,7 +239,7 @@ justin.j.newsom@vanderbilt.edu
 Elizabeth Lee
 She/her/hers
 Louisville, KY
-Mechanical Engineering
+Mechanical Engineering 
 AASA, AACF, AWB, QuestBridge Scholars Network
 elizabeth.i.lee@vanderbilt.edu
 
@@ -261,7 +261,7 @@ rong.du@vanderbilt.edu
 
 
 Suhee Lee
-She/her/hers
+She/her/hers 
 Philadelphia, PA
 Psychology; Child Development
 UNICEF, Korean-American Scientists and Engineers Association (KSEA), Liberty in North Korea (LINK), K-POP, PISO
@@ -295,8 +295,8 @@ yiheng.li@vanderbilt.edu
 Emily Xu
 she/her/hers
 St. Louis, MO
-Neuroscience and Philosophy
-n/a
+Neuroscience and Philosophy (Pre-Med)
+AASA, Vanderbilt VIVID (K-Pop), MLC, Research
 haochen.xu@vanderbilt.edu
 
 
@@ -328,7 +328,7 @@ Matt Zhang
 He/him/his
 Barrington, IL (Chicago suburbs)
 HOD; Asian studies; Film; Computer science; Music (voice concentration)
-Melodores, AASA, Vandy Student Media
+Melodores, AASA, Vandy Student Media 
 matthew.y.zhang@vanderbilt.edu
 
 
@@ -352,14 +352,14 @@ Brianna Li
 She/her/hers
 Spartanburg, SC
 Chemical engineering; Chemistry
-AASA, KPop (VIVID)
+AASA, KPop (VIVID) 
 brianna.li@vanderbilt.edu
 
 
 Belinda Chiu
 She/her/hers
 Hollywood, MD
-Computer science
+Computer science 
 AASA, Lambda, Women in Computing
 belinda.l.chiu@vanderbilt.edu
 
@@ -367,7 +367,7 @@ belinda.l.chiu@vanderbilt.edu
 Xinyi He
 She/her/hers
 Kansas City, KS
-Chemical Engineering
+Chemical Engineering 
 AASA, VSVS
 xinyi.he@vanderbilt.edu
 
@@ -386,3 +386,19 @@ Little Neck, NY
 Financial economics; Computer science
 AASA, VUCA, Investment club
 howard.chu@vanderbilt.edu
+
+
+Matthew Seh
+He/him/his
+Demarest, NJ
+Mathematics; Neuroscience; Scientific Computing; Pre-med
+SyBBURE, VSG, VSVS
+matthew.c.seh@vanderbilt.edu
+
+
+Nicole Kim
+she/her/hers
+Johns Creek, GA
+Computer Science, Mathematics; Engineering Management
+AASA, AACF, PISO, ASB
+nicole.e.kim@vanderbilt.edu
