@@ -57,7 +57,7 @@ $.get(file, function(data){
     console.log("test");
     $('#mentor-grid').append("<div class=\"box\"><h2>" + peopleArray[i].fullname + "</h2><ul><li>" + peopleArray[i].pronouns +
     "</li><li>" + peopleArray[i].hometown + "</li><li>" + peopleArray[i].study + "</li><li>" + peopleArray[i].involvement +
-    "</li></ul></div>");
+    "</li><li><a href=\"malto:" + peopleArray[i].contact + "\" target=\"_blank\"><img alt=\"Contact\" src=\"../img/mail-clipart.png\"</a></li></ul></div>");
   }
 
 });
