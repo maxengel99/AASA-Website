@@ -99,7 +99,7 @@ hr {
   color: #444;
 }
 
-.box {
+.cell {
   position: relative;
   background-color: #84e1e1;
   color: #fff;
@@ -108,23 +108,23 @@ hr {
   font-size: 150%;
 }
 
-.box h2 {
+.cell h2 {
   min-height: 96px;
 }
 
-.box img {
+.cell img {
   width: 15%;
 }
 
-.box ul {
+.cell ul {
   text-align: left;
 }
 
-.box a {
+.cell a {
   color: #808080;
 }
 
-.box a:hover{
+.cell a:hover{
   color: #fff;
 	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
 }

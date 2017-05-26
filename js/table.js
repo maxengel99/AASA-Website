@@ -57,7 +57,7 @@ $.get(file, function(data){
 
   for(var i = 0; i < numOfPeople; i++){
     console.log("test");
-    $('#mentor-grid').append("<div class=\"box\"><h2>" + peopleArray[i].fullname + "</h2><ul><li>" + peopleArray[i].pronouns +
+    $('#mentor-grid').append("<div class=\"cell\"><h2>" + peopleArray[i].fullname + "</h2><ul><li>" + peopleArray[i].pronouns +
     "</li><li>" + peopleArray[i].hometown + "</li><li>" + peopleArray[i].study + "</li><li>" + peopleArray[i].involvement +
     "</li></ul><ul class=\"bottom\"><li><a href=\"malto:" + peopleArray[i].contact + "\" target=\"_blank\"><img alt=\"Contact\" src=\"img/mail-clipart.png\">"
     + con + "</a></li></ul>");
