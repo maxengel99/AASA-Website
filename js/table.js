@@ -22,7 +22,7 @@ $.get(file, function(data){
         study: lines[i * 6 + 3],
         involvement: lines[i * 6 + 4],
         contact: lines[i * 6 + 5]
-      } +
+      }
   }
 
   // sort people by alphabetical order
@@ -54,9 +54,10 @@ $.get(file, function(data){
   }*/
 
   for(var i = 0; i < numOfPeople; i++){
+    console.log("test");
     $('#mentor-grid').append("<div class=\"box\"><h2>" + peopleArray[i].fullname + "</h2><ul><li>" + peopleArray[i].pronouns +
     "</li><li>" + peopleArray[i].hometown + "</li><li>" + peopleArray[i].study + "</li><li>" + peopleArray[i].involvement +
     "</li></ul></div>");
   }
-  
+
 });
