@@ -53,7 +53,7 @@ $.get(file, function(data){
 
   }*/
 
-  var con = "Contact Me";
+  var con = " Contact Me";
 
   for(var i = 0; i < numOfPeople; i++){
     console.log("test");

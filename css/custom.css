@@ -108,5 +108,17 @@ hr {
 }
 
 .box h2 {
-  min-height:96px;
+  min-height: 96px;
+}
+
+.box img {
+  width: 15%;
+}
+
+.box ul {
+  text-align: left;
+}
+
+.box a {
+  color: #808080;
 }
