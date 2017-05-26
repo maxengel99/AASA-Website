@@ -1,4 +1,4 @@
-var file = "Mentorlist.txt";
+var file = "https://maxengel99.github.io/Mentorlist.txt";
 var peopleArray = [];
 
 $.get(file, function(data){
@@ -59,8 +59,8 @@ $.get(file, function(data){
     console.log("test");
     $('#mentor-grid').append("<div class=\"box\"><h2>" + peopleArray[i].fullname + "</h2><ul><li>" + peopleArray[i].pronouns +
     "</li><li>" + peopleArray[i].hometown + "</li><li>" + peopleArray[i].study + "</li><li>" + peopleArray[i].involvement +
-    "</li><li><a href=\"malto:" + peopleArray[i].contact + "\" target=\"_blank\"><img alt=\"Contact\" src=\"../img/mail-clipart.png\">"
-    + con + "</a></li></ul></div>");
+    "</li></ul><ul class=\"bottom\"><li><a href=\"malto:" + peopleArray[i].contact + "\" target=\"_blank\"><img alt=\"Contact\" src=\"img/mail-clipart.png\">"
+    + con + "</a></li></ul>");
   }
 
 });
