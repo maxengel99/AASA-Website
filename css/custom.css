@@ -102,10 +102,12 @@ hr {
 .cell {
   position: relative;
   background-color: #84e1e1;
+  background: linear-gradient(#84e1e1, #32cdcd);
   color: #fff;
   border-radius: 5px;
   padding: 20px;
-  font-size: 150%
+  font-size: 150%;
+  box-shadow: 0 2px 4px 2px #808080;
 }
 
 .cell h2 {
@@ -122,10 +124,16 @@ hr {
 
 .cell ul {
   text-align: left;
+  list-style-type:disc;
+  margin-left: 4px;
+}
+
+.cell li {
+  margin-bottom: 5px;
 }
 
 .cell a {
-  color: #808080;
+  color: #666666;
 }
 
 .cell a:hover{
@@ -133,7 +141,12 @@ hr {
 	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
 }
 
+.bottom li {
+  list-style-type: none;
+}
+
 .bottom a {
   position: absolute;
+  text-decoration: none;
 	bottom: 12px;
 }
