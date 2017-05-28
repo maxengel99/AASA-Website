@@ -56,11 +56,28 @@ $.get(file, function(data){
   var con = " Contact Me";
 
   for(var i = 0; i < numOfPeople; i++){
-    console.log("test");
-    $('#mentor-grid').append("<div class=\"cell\"><h2>" + peopleArray[i].fullname + "</h2><ul><li>" + peopleArray[i].pronouns +
-    "</li><li>" + peopleArray[i].hometown + "</li><li>" + peopleArray[i].study + "</li><li>" + peopleArray[i].involvement +
-    "</li></ul><ul class=\"bottom\"><li><a href=\"malto:" + peopleArray[i].contact + "\" target=\"_blank\"><img alt=\"Contact\" src=\"img/mail-clipart.png\">"
-    + con + "</a></li></ul>");
-  }
 
+    var personInfo = "<div class=\"cell\"><h2>" + peopleArray[i].fullname + "</h2><ul>";
+
+    if(peopleArray[i].pronouns.trim() != 'n/a'){
+      personInfo += "<li>" + peopleArray[i].pronouns + "</li>";
+    }
+
+    if(peopleArray[i].hometown.trim() != 'n/a'){
+      personInfo += "<li>" + peopleArray[i].hometown + "</li>";
+    }
+
+    if(peopleArray[i].study.trim() != 'n/a'){
+      personInfo += "<li>" + peopleArray[i].study + "</li>";
+    }
+
+    if(peopleArray[i].involvement.trim() != 'n/a'){
+      personInfo += "<li>" + peopleArray[i].involvement + "</li>";
+    }
+
+    personInfo += "</ul><ul class=\"bottom\"><li><a href=\"malto:" + peopleArray[i].contact + "\" target=\"_blank\"><img alt=\"Contact\" src=\"img/mail-clipart.png\">"
+    + con + "</a></li></ul>"
+
+    $('#mentor-grid').append(personInfo);
+  }
 });
