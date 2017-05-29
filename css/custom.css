@@ -101,8 +101,7 @@ hr {
 
 .cell {
   position: relative;
-  background-color: #84e1e1;
-  background: linear-gradient(#84e1e1, #32cdcd);
+  background: linear-gradient(#84e1e1, #2db9b9);
   color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -133,11 +132,11 @@ hr {
 }
 
 .cell a {
-  color: #666666;
+  color: #B82E67;
 }
 
 .cell a:hover{
-  color: #fff;
+  color: #E599B7;
 	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
 }
 
@@ -149,4 +148,9 @@ hr {
   position: absolute;
   text-decoration: none;
 	bottom: 12px;
+}
+
+#mentor-blurb {
+  margin-bottom: 40px;
+  width: 1200px;
 }
