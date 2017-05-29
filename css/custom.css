@@ -107,6 +107,7 @@ hr {
   padding: 20px;
   font-size: 150%;
   box-shadow: 0 2px 4px 2px #808080;
+  min-height: 350px;
 }
 
 .cell h2 {

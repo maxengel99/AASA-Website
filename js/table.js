@@ -43,16 +43,6 @@ $.get(file, function(data){
 
   console.log(peopleArray);
 
-  /* Comment out table creator
-  for(var i = 0; i < numOfPeople; i++){
-    $('#mentor-table').append("<tr><td>" + peopleArray[i].fullname + "</td><td>" + peopleArray[i].pronouns + "</td><td>"
-    + peopleArray[i].hometown + "</td><td>" + peopleArray[i].study + "</td><td>" + peopleArray[i].involvement + "</td><td>"
-    + "<a href=\"malto:" + peopleArray[i].contact + "\" target=\"_blank\"><img alt=\"Contact\" src=\"../img/mail-clipart.png\"></a></td></tr>");
-
-    //<td><a href="malto:maxengel99@gmail.com" target="_blank"><img alt="Contact" src="img/mail-clipart.png"></a></td> -->
-
-  }*/
-
   var con = " Contact Me";
 
   for(var i = 0; i < numOfPeople; i++){
