@@ -154,3 +154,10 @@ hr {
   margin-bottom: 40px;
   width: 1200px;
 }
+
+#quote {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  letter-spacing: -1px;
+  color: #C9E085;
+}
