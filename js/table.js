@@ -1,4 +1,4 @@
-var file = "https://maxengel99.github.io/Mentorlist.txt";
+var file = "http://www.vandyaasa.com/Mentorlist.txt";
 var peopleArray = [];
 
 $.get(file, function(data){
