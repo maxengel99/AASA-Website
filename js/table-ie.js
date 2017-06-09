@@ -60,7 +60,7 @@ $.get(file, function(data){
       col = 9;
     }
 
-    personInfo += col + "; -ms-grid-row:" + row + "; margin-bottom:40px\"><h2>" + peopleArray[i].fullname + "</h2><ul>";
+    personInfo += col + "; -ms-grid-row:" + row + "; margin-bottom:4px\"><h2>" + peopleArray[i].fullname + "</h2><ul>";
 
     if(peopleArray[i].pronouns.trim() != 'n/a'){
       personInfo += "<li>" + peopleArray[i].pronouns + "</li>";
