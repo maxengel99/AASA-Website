@@ -405,7 +405,7 @@ Vanderbilt Robotics, American Society of Mechanical Engineers (ASME), Undergradu
 cindy.l.liu@vanderbilt.edu
 
 Joyce Hwang
-Sher/her/hers
+She/her/hers
 Mineola, NY
 Child Development; Spanish; HOD
 AASA, Navigators, Alternative Spring Break
@@ -438,3 +438,10 @@ Irving, TX
 Flute Performance; Medicine, Health, and Society
 AASA, Alpha Chi Omega, VIVID, Vandy Taal, Tour Guides, RA
 crystal.y.kim@vanderbilt.edu
+
+Eric Doan
+He/him/his
+Greenville, SC
+Medicine, Health, and Society; Financial Economics; Pre-Law
+AASA, MHS Student Advisory Board
+eric.v.doan@vanderbilt.edu
