@@ -1,6 +1,18 @@
 var file = "http://www.vandyaasa.com/Mentorlist.txt";
 var peopleArray = [];
 
+var textBox = document.getElementById('searchInput');
+
+textBox.addEventListener('keyup', function(){
+  console.log("test");
+});
+
+console.log('test');
+
+function test() {
+  alert("tes");
+}
+
 $.get(file, function(data){
   var lines = data.split("\n"); // creates array of each line
 
@@ -11,7 +23,6 @@ $.get(file, function(data){
     }
   }
 
-  console.log(lines);
   var numOfPeople = (lines.length+1)/6 - 1; // 6 = num of lines per person
 
   for(var i = 0; i < numOfPeople; i++){
@@ -41,7 +52,13 @@ $.get(file, function(data){
     return 0;
   });
 
+  makeGrid(peopleArray, numOfPeople, personInfo);
+});
+
+function makeGrid(peopleArray, numOfPeople, personInfo) {
   console.log(peopleArray);
+
+  $(".cell").remove();
 
   var con = " Contact Me";
 
@@ -70,4 +87,4 @@ $.get(file, function(data){
 
     $('#mentor-grid').append(personInfo);
   }
-});
+}

@@ -93,7 +93,7 @@ hr {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 19% 19% 19% 19% 19%;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
   grid-gap: 10px;
   background-color: #fff;
   color: #444;
@@ -104,18 +104,20 @@ hr {
   background: linear-gradient(#84e1e1, #2db9b9);
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+  padding: 0px;
+  font-size: 120%;
   box-shadow: 0 2px 4px 2px #808080;
-  min-height: 350px;
+  min-height: 300px;
 }
 
 .cell h2 {
-  min-height: 32px;
-  font-size: 24px;
+  min-height: 28px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  width: 100%;
+  padding-top: 20px;
 }
 
 .cell img {
@@ -126,6 +128,8 @@ hr {
   text-align: left;
   list-style-type:disc;
   margin-left: 4px;
+  margin-bottom:10px;
+  padding: 10px 20px 5px 20px;
 }
 
 .cell li {
@@ -148,7 +152,6 @@ hr {
 .bottom a {
   position: absolute;
   text-decoration: none;
-	bottom: 12px;
 }
 
 #mentor-blurb {
@@ -161,4 +164,19 @@ hr {
   font-style: italic;
   letter-spacing: -1px;
   color: #C9E085;
+}
+
+#searchInput {
+  width: 40%;
+  padding: 10px;
+  border: solid 5px white;
+  transition: border 0.3s;
+}
+
+#searchInput:focus {
+  border: solid 5px #969696;
+}
+
+-ms-column-column nth-child(2) {
+  width: 2px;
 }

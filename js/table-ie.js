@@ -41,26 +41,49 @@ $.get(file, function(data){
     return 0;
   });
 
+  makeGrid(peopleArray, numOfPeople);
+
+  var textBox = document.getElementById('searchInput');
+
+  textBox.addEventListener('keyup', function(){
+    var modifiedGrid = [];
+    var searchTerm = textBox.value;
+
+    for(var i = 0; i < numOfPeople; i++){
+      for(var prop in peopleArray[i]){
+        if(peopleArray[i][prop].toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1){
+          modifiedGrid.push(peopleArray[i]);
+          break;
+        }
+      }
+    }
+
+    makeGrid(modifiedGrid, modifiedGrid.length);
+  });
+});
+
+function makeGrid(peopleArray, numOfPeople) {
   console.log(peopleArray);
 
-  var con = " Contact Me";
+  $('#mentor-grid').children().remove();
 
+  var con = " Contact Me";
   var row = 1;
 
   for(var i = 0; i < numOfPeople; i++){
 
-    if(i != 0 && i%5 == 0){
+    if(i != 0 && i%6 == 0){
       row += 2;
     }
 
     var personInfo = "<div class=\"cell\" style=\"-ms-grid-column:";
 
-    var col = ((i+1)%5)+((i+1)%5-1);
+    var col = ((i+1)%6)+((i+1)%6-1);
     if(col == -1){
-      col = 9;
+      col = 11;
     }
 
-    personInfo += col + "; -ms-grid-row:" + row + "; margin-bottom:4px\"><h2>" + peopleArray[i].fullname + "</h2><ul>";
+    personInfo += col + "; -ms-grid-row:" + row + "; margin-bottom:4px\"><div class=\"name\"><h2>" + peopleArray[i].fullname + "</div></span><ul>";
 
     if(peopleArray[i].pronouns.trim() != 'n/a'){
       personInfo += "<li>" + peopleArray[i].pronouns + "</li>";
@@ -79,8 +102,8 @@ $.get(file, function(data){
     }
 
     personInfo += "</ul><ul class=\"bottom\"><li><a href=\"malto:" + peopleArray[i].contact + "\" target=\"_blank\"><img alt=\"Contact\" src=\"img/mail-clipart.png\">"
-    + con + "</a></li></ul>"
+    + con + "</a></li></ul></div>"
 
     $('#mentor-grid').append(personInfo);
   }
-});
+}
