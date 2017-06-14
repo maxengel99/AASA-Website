@@ -99,6 +99,12 @@ hr {
   color: #444;
 }
 
+@supports (-ms-ime-align:auto) {
+    .wrapper {
+        max-width:1000px;
+    }
+}
+
 .cell {
   position: relative;
   background: linear-gradient(#84e1e1, #2db9b9);
