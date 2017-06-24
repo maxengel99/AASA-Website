@@ -109,7 +109,7 @@ hr {
   position: relative;
   background: linear-gradient(#84e1e1, #2db9b9);
   color: #fff;
-  border-radius: 5px;
+  border-radius: 5px 5px 30px 30px;
   padding: 0px;
   font-size: 120%;
   box-shadow: 0 2px 4px 2px #808080;
@@ -186,4 +186,126 @@ hr {
 
 -ms-column-column nth-child(2) {
   width: 2px;
+}
+
+.hidden-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear, opacity 0.5s linear;
+}
+
+.parent:hover ~ .hidden-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlap {
+  position: absolute;
+  z-index: 1;
+  width: 93%;
+}
+
+.hover {
+  opacity: 1 !important;
+  filter:none !important;
+}
+
+.gray {
+  opacity: .5;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.new-size {
+  width: 75%;
+}
+
+.left-board {
+  width:200%;
+  left:100%;
+  margin-top:-130%;
+  padding-bottom: 16px;
+  color: black;
+}
+
+.summary {
+  font-size: 150%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hobbies {
+  float: left;
+  width: 40%;
+}
+
+.hobbies ul {
+  margin-bottom: 0;
+}
+
+.hobbies h4 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+.hobbies span {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.hobbies li {
+  text-align: left;
+  font-size: 120%;
+  margin-left: 5%;
+}
+
+.hobbies li:before {
+  content: "- ";
+}
+
+.about {
+  margin-top: 25px;
+  float: right;
+  width: 60%;
+  font-size: 130%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.central-summary {
+  left: -110%;
+  margin-top: -120%;
+  color: black;
+  width: 110%;
+}
+
+.central-other {
+  left:100%;
+  margin-top:-120%;
+  color: black;
+  width: 110%;
+  padding-left: 10px;
+}
+
+.right-board {
+  width:200%;
+  left:-200%;
+  margin-top:-130%;
+  padding-bottom: 16px;
+  color: black;
+}
+
+.central-other .hobbies {
+  width: 50%;
+}
+
+.central-other .about {
+  width: 50%;
+}
+
+.parent > #jiyu, .parent > #cindee {
+  margin:-32px;
+  width:auto;
+  margin-top:8px;
 }
