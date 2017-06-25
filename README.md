@@ -1,6 +1,4 @@
-<div style="position:absolute;width:100%;height:100%">
-<img src="https://raw.githubusercontent.com/maxengel99/maxengel99.github.io/master/img/aasa.png">
-</div>
+![aasa](https://raw.githubusercontent.com/maxengel99/maxengel99.github.io/master/img/aasa.png)
 
 # Asian American Student Association Website
 
