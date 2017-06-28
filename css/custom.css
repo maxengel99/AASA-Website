@@ -310,13 +310,17 @@ hr {
   margin-top:8px;
 }
 
+.social-media {
+  margin-top: 5px;
+}
+
 .social-media img {
+  margin: 5px;
   opacity: .5;
   filter: grayscale(100%);
   height: 30px;
   width: auto;
 }
-
 
 #color {
   opacity: 1;
