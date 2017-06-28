@@ -4,7 +4,7 @@ $('.parent').hover (
     $('.image-medium').addClass('gray');
   },
   function() {
-    $('img',this).removeClass('hover');
+    $('.bio-pic',this).removeClass('hover');
     $('.image-medium').removeClass('gray');
   }
 )
@@ -20,6 +20,15 @@ $('.instagram').hover (
 
 $('.twitter').hover (
   function(){
+    $(this).attr('id','color');
+  },
+  function() {
+    $(this).removeAttr('id','color');
+  }
+)
+
+$('.email-button').hover (
+  function() {
     $(this).attr('id','color');
   },
   function() {
