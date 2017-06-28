@@ -1,6 +1,6 @@
 $('.parent').hover (
   function() {
-    $('img',this).addClass('hover');
+    $('.bio-pic',this).addClass('hover');
     $('.image-medium').addClass('gray');
   },
   function() {
