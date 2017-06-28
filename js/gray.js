@@ -8,3 +8,21 @@ $('.parent').hover (
     $('.image-medium').removeClass('gray');
   }
 )
+
+$('.instagram').hover (
+  function(){
+    $(this).attr('id','color');
+  },
+  function() {
+    $(this).removeAttr('id','color');
+  }
+)
+
+$('.twitter').hover (
+  function(){
+    $(this).attr('id','color');
+  },
+  function() {
+    $(this).removeAttr('id','color');
+  }
+)
