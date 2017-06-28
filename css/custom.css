@@ -315,11 +315,28 @@ hr {
 }
 
 .social-media img {
-  margin: 5px;
+  margin-top: 5px;
   opacity: .5;
   filter: grayscale(100%);
+}
+
+.twitter {
+  height: 35px;
+  width: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.instagram {
   height: 30px;
   width: auto;
+  margin-right: 5px;
+}
+
+.email-button {
+  height: 35px;
+  width: auto;
+  margin-left: 3px;
 }
 
 #color {
