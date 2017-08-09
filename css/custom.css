@@ -72,10 +72,6 @@ hr {
   background-color: #32cdcd;
 }
 
-#mentors .modal-lg {
-  width: 80%;
-}
-
 #mentor-table th {
   color: black;
   word-wrap: break-word;
@@ -92,28 +88,23 @@ hr {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 16% 16% 16% 16% 16% 16%;
-  grid-gap: 10px;
   background-color: #fff;
   color: #444;
 }
 
-@supports (-ms-ime-align:auto) {
-    .wrapper {
-        max-width:1000px;
-    }
-}
-
 .cell {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   background: linear-gradient(#84e1e1, #2db9b9);
   color: #fff;
   border-radius: 5px 5px 30px 30px;
   padding: 0px;
   font-size: 120%;
   box-shadow: 0 2px 4px 2px #808080;
-  min-height: 300px;
+  min-height: 420px;
+  width: 165px;
+  margin: 4px;
 }
 
 .cell h2 {

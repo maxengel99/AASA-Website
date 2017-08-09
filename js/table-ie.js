@@ -76,14 +76,7 @@ function makeGrid(peopleArray, numOfPeople) {
       row += 2;
     }
 
-    var personInfo = "<div class=\"cell\" style=\"-ms-grid-column:";
-
-    var col = ((i+1)%6)+((i+1)%6-1);
-    if(col == -1){
-      col = 11;
-    }
-
-    personInfo += col + "; -ms-grid-row:" + row + "; margin-bottom:4px\"><div class=\"name\"><h2>" + peopleArray[i].fullname + "</div></span><ul>";
+    var personInfo = "<div class=\"col-md-2 col-sm-4 cell\"><div class=\"name\"><h2>" + peopleArray[i].fullname + "</h2></div><ul>";
 
     if(peopleArray[i].pronouns.trim() != 'n/a'){
       personInfo += "<li>" + peopleArray[i].pronouns + "</li>";
