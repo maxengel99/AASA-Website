@@ -90,6 +90,7 @@ hr {
 .wrapper {
   background-color: #fff;
   color: #444;
+  margin-left: 3%
 }
 
 .cell {
@@ -105,6 +106,23 @@ hr {
   min-height: 420px;
   width: 165px;
   margin: 4px;
+}
+
+@media (max-width: 380px) {
+  .cell {
+    width: 155px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cell {
+    width: 130px;
+    font-size: 110%;
+  }
+
+  .cell h2 {
+    font-size: 18px;
+  }
 }
 
 .cell h2 {
@@ -333,4 +351,32 @@ hr {
 #color {
   opacity: 1;
   filter: none;
+}
+
+.color {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.bio-link {
+  display: none;
+}
+
+.mobile-pic {
+  float: left;
+}
+
+.mobile-hobbies {
+  float: none;
+  width: 100%;
+}
+
+.mobile-about {
+  margin-top: 25px;
+  float: none;
+  width: 100%;
+}
+
+.mobile-summary {
+  clear: left;
 }

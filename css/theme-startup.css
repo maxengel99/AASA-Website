@@ -4332,6 +4332,10 @@ video {
   }
 }
 /*!---------- 29. IMAGE BLOCKS ----------*/
+.image-lg {
+  max-height: 160px;
+}
+
 .image-md {
   max-height: 120px;
 }
