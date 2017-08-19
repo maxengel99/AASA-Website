@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    if (/Mobi/.test(navigator.userAgent)) {
+    if (/Mobi/.test(navigator.userAgent) && (screen.availWidth < 500)) {
         $('.social-media img').addClass('color');
     } else {
         $('.parent').hover(function() {
