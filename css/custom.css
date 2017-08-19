@@ -321,6 +321,7 @@ hr {
 
 .social-media {
   margin-top: 5px;
+  display:inline-block;
 }
 
 .social-media img {
@@ -366,6 +367,14 @@ hr {
 
 .mobile-pic {
   float: left;
+  width: 38%;
+}
+
+#mobile-title {
+  width: 60%;
+  display: inline-block;
+  float: right;
+  margin-top: 0;
 }
 
 .mobile-hobbies {
