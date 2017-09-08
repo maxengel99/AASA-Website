@@ -405,3 +405,7 @@ hr {
 .mobile-font {
   font-size: 120%;
 }
+
+#white-background-override {
+  background-color:white !important;
+}
