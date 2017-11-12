@@ -409,3 +409,14 @@ hr {
 #white-background-override {
   background-color:white !important;
 }
+
+.video-table
+{
+  width:100%;
+}
+
+.video-table td
+{
+  padding: 5px;
+  font-size: 20px;
+}
